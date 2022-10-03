@@ -12,7 +12,7 @@ const Navbar = () => {
     { id: 5, name: "About", path: "./about" },
   ];
   return (
-    <nav className="bg-pink-100 w-full">
+    <nav className="bg-pink-600 w-full font-bold ">
       {/* {open ? "close icon" : "open icon"} */}
 
       {/* {open ? (
@@ -38,8 +38,8 @@ const Navbar = () => {
         {open ? <XMarkIcon /> : <Bars3Icon />}
       </div>
       <ul
-        className={`bg-pink-100 md:flex w-full justify-center  absolute  md:static duration-500 ease-in ${
-          open ? "top-6" : "top-[120px]"
+        className={`bg-pink-600 md:flex w-full justify-center absolute md:static duration-500 ease-in ${
+          open ? "top-6" : "top-[-120px]"
         }`}
       >
         {routes.map((route) => (
